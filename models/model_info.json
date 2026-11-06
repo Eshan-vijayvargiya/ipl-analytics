@@ -1,0 +1,13 @@
+{
+  "model": "Logistic regression + splines",
+  "trained_on": "2008-2024 chases",
+  "test_on_unseen_2022_24": {
+    "CV log loss (2008-21)": 0.445,
+    "Test log loss (2022-24)": 0.444,
+    "Test Brier": 0.144,
+    "Test AUC": 0.878
+  },
+  "baseline_auc": 0.839,
+  "states": 118186,
+  "chases": 1055
+}
