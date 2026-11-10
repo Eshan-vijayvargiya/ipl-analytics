@@ -1,0 +1,37 @@
+{
+ "model": "Player ratings from rallies (regularised logistic regression) + Markov chain",
+ "train": "2018-2021",
+ "test": "2022",
+ "pre_match": {
+  "matches": 50,
+  "both players seen before": 14,
+  "Accuracy": 0.59,
+  "Log loss": 0.7902922059672953,
+  "Accuracy (both seen)": 0.5714285714285714,
+  "Coin flip log loss": 0.6931471805599453
+ },
+ "in_match": {
+  "Score only (every rally 50/50)": {
+   "Log loss": 0.4830849602146955,
+   "Accuracy": 0.7686087990487515,
+   "rallies": 4205
+  },
+  "Score + rallies won so far (final)": {
+   "Log loss": 0.45555276826707247,
+   "Accuracy": 0.7624256837098692,
+   "rallies": 4205
+  },
+  "+ player ratings from 2018-21": {
+   "Log loss": 0.4943097613379482,
+   "Accuracy": 0.7423305588585017,
+   "rallies": 4205
+  },
+  "after game 1": {
+   "matches": 50,
+   "Accuracy": 0.88,
+   "Log loss": 0.35523439716858024
+  }
+ },
+ "strength": 100,
+ "serve_effect": -0.05302839584277682
+}

@@ -1,0 +1,58 @@
+{
+ "model": "Poisson goal model on Elo gap, home advantage and match type",
+ "train": "1990-2021",
+ "test": "2022-2026",
+ "test_matches": 5068,
+ "results": {
+  "Base rates (home win 48%)": {
+   "Log loss": 1.050871710409302,
+   "RPS": 0.2289919643494371,
+   "Accuracy": 0.4771112865035517
+  },
+  "Elo expected score": {
+   "Log loss": 0.8937371481596451,
+   "RPS": 0.17464500949172027,
+   "Accuracy": 0.6022099447513812
+  },
+  "Poisson goal model (final)": {
+   "Log loss": 0.8782304937158557,
+   "RPS": 0.17250703479586152,
+   "Accuracy": 0.6018153117600631
+  }
+ },
+ "rho": 0.0,
+ "in_play": {
+  "0": {
+   "Log loss": 0.7823275977842117,
+   "Accuracy": 0.6803962460896767
+  },
+  "30": {
+   "Log loss": 0.7208659901865017,
+   "Accuracy": 0.7101147028154328
+  },
+  "60": {
+   "Log loss": 0.5728702546646216,
+   "Accuracy": 0.7440041710114703
+  },
+  "75": {
+   "Log loss": 0.4523554035814406,
+   "Accuracy": 0.8070907194994786
+  },
+  "85": {
+   "Log loss": 0.34381356867652046,
+   "Accuracy": 0.8806047966631908
+  }
+ },
+ "in_play_matches": 1918,
+ "coef": {
+  "elo_diff": 0.2207334601151967,
+  "elo_diff_sq": -0.007067905353676727,
+  "at_home": 0.11519350156757935,
+  "away_side": -0.3300901228945883,
+  "kind_Other tournament": 0.13539396902667616,
+  "kind_Qualifier": 0.050578748182060075,
+  "kind_Nations League": 0.09843165295066676,
+  "kind_Continental finals": -0.010935213732648668,
+  "kind_World Cup": -0.01459089108626345
+ }
+}

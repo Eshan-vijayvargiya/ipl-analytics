@@ -48,7 +48,21 @@ h1, h2, h3, .hero h1, .kpi .v { font-family: 'Outfit', 'Inter', 'Segoe UI', Aria
 .brand { display: flex; gap: .65rem; align-items: center; margin: .2rem 0 1rem; }
 .brand .name { font-family: 'Outfit', 'Segoe UI', Arial, sans-serif; font-weight: 800; font-size: 1.25rem; color: #f4f6fb; line-height: 1.1; }
 .brand .sub { color: #8d99b1; font-size: .8rem; }
+[data-testid="stSidebar"] [data-testid="stHorizontalBlock"] button p { font-size: .82rem; white-space: nowrap; }
 .foot { color: #6f7b93; font-size: .78rem; margin-top: 1.5rem; }
+.pbar { display: flex; height: 40px; border-radius: 12px; overflow: hidden; margin: .4rem 0 .9rem; border: 1px solid #26334f; }
+.pbar div { display: flex; align-items: center; justify-content: center; color: #0e1525; font-weight: 700; font-size: .85rem;
+  white-space: nowrap; overflow: hidden; }
+.mtab { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.mtab th { color: #9aa6bd; font-weight: 500; text-align: left; padding: .3rem .4rem; border-bottom: 1px solid #26334f; }
+.mtab td { color: #d5dcea; padding: .32rem .4rem; border-bottom: 1px solid #1d2842; }
+.mtab tr.final td { color: #f2b630; font-weight: 600; }
+.sport { background: #16213a; border: 1px solid #26334f; border-radius: 18px; padding: 1rem 1.1rem; height: 100%; }
+.sport .ico { font-size: 1.7rem; } .sport h4 { font-family: 'Outfit', 'Segoe UI', Arial, sans-serif; color: #f4f6fb; margin: .25rem 0 .2rem; font-size: 1.15rem; }
+.sport p { color: #9aa6bd; font-size: .86rem; margin: .1rem 0; } .sport .stat { color: #f2b630; font-weight: 700; }
+.flow { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .3rem 0 1rem; }
+.flow div { background: #1a2644; border: 1px solid #2c3b5f; border-radius: 12px; padding: .5rem .75rem; color: #e8edf5; font-size: .86rem; }
+.flow span { color: #f2b630; font-weight: 700; }
 </style>
 """
 

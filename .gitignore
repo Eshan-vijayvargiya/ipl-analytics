@@ -1,11 +1,15 @@
 # Raw data is downloaded separately (see data/README.md)
 data/*.csv
+data/raw/
 
 # Python / Jupyter
 __pycache__/
 .ipynb_checkpoints/
 .venv/
 venv/
+
+# Test leftovers
+app/demo/_fuzz/
 
 # Editors
 .idea/

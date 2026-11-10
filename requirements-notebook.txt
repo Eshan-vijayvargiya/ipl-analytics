@@ -1,5 +1,5 @@
 -r requirements.txt
 matplotlib>=3.9
 seaborn>=0.13
-scipy>=1.14
 notebook>=7
+pyreadr>=0.5

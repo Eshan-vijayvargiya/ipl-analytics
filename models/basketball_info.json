@@ -1,0 +1,64 @@
+{
+ "model": "Normal random-walk model: final margin ~ Normal(margin + mu*f, sigma*sqrt(f))",
+ "train": "2021-22, 2022-23",
+ "test": "2023-24",
+ "test_states": 146872,
+ "test_games": 1230,
+ "params_train": [
+  6.269955551975849,
+  20.448041075818622,
+  3.5460574158724736
+ ],
+ "params_final": [
+  6.613798751477795,
+  20.288149885891244,
+  3.1236136394734713
+ ],
+ "results": {
+  "Score and clock only (no home edge, no team strength)": {
+   "Log loss": 0.4798424459288162,
+   "Brier": 0.162554779819165,
+   "AUC": 0.8395337845060776
+  },
+  "+ home advantage": {
+   "Log loss": 0.4797529905279795,
+   "Brier": 0.16257042785431616,
+   "AUC": 0.839479916539252
+  },
+  "+ Elo team strength (final)": {
+   "Log loss": 0.4443384706207593,
+   "Brier": 0.14754258867381795,
+   "AUC": 0.8684323619806973
+  }
+ },
+ "by_stage": {
+  "Tip-off": {
+   "states": 1230,
+   "Accuracy": 0.6487804878048781,
+   "Log loss": 0.6124352669016979,
+   "Brier": 0.21275063517909043,
+   "AUC": 0.7146152534788075
+  },
+  "Half-time": {
+   "states": 2373,
+   "Accuracy": 0.7619047619047619,
+   "Log loss": 0.4832961668511531,
+   "Brier": 0.15838648032523847,
+   "AUC": 0.8492490205547761
+  },
+  "Start of 4th": {
+   "states": 2435,
+   "Accuracy": 0.8447638603696098,
+   "Log loss": 0.35825390590335976,
+   "Brier": 0.11258235284824371,
+   "AUC": 0.9211902151987971
+  },
+  "Last 2 minutes": {
+   "states": 8201,
+   "Accuracy": 0.9423241068162419,
+   "Log loss": 0.1366228333383657,
+   "Brier": 0.040854392952642836,
+   "AUC": 0.9889462182498205
+  }
+ }
+}
